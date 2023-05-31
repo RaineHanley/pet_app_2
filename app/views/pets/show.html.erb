@@ -1,3 +1,5 @@
 <h2><%= @pet.name %></h2>
 <p>Breed: <%= @pet.breed %></p>
 <img src="<%= @pet.image %>" width="300" />
+
+<%= link_to "Edit pet", edit_pet_path(@pet) %>

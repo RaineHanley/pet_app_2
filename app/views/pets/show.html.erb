@@ -2,4 +2,7 @@
 <p>Breed: <%= @pet.breed %></p>
 <img src="<%= @pet.image %>" width="300" />
 
+
+
 <%= link_to "Edit pet", edit_pet_path(@pet) %>
+<%= link_to "Delete pet", pet_path(@pet), data: {turbo_method: :delete} %>
